@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lucky Number
+{% endblock %}
+
+{% block body %}
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 255%;
+			font: 18px / 1.5 sans-serif;
+			color:navy;
+		}
+		.example-wrapper h1 {
+			background: #F5F9F5;
+			padding: 2px 6px;
+			
+		}
+		
+
+	</style>
+
+	<div class="example-wrapper">
+		<form action="/" method="post">
+			<table>
+				<tr>
+					<td>
+						<label>Email:</label>
+					</td>
+					<td><input name="email" type="email" required/></td>
+				</tr>
+				<tr>
+					<td>
+						<label>Password:</label>
+					</td>
+					<td><input name="password" type="password" required/></td>
+				</tr>
+				<tr>
+					<td><input type="submit"  class="btn btn-success" value="Submit"/></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+{% endblock %}
